@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App avec CDN</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <!-- CDN pour React, React-DOM et Babel -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- CDN pour Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- <script src="components/Loader/index.js" type="text/babel"></script> -->
+    <script type="text/babel">
+        // index.js
+        (async function () {
+            await $.getScript("components/Loader/index.js");
+            await $.getScript("app.js");
+
+            const root = ReactDOM.createRoot(document.getElementById("app"))
+            root.render(React.createElement(App))
+        })();
+
+
+    </script>
+</body>
+
+</html>
