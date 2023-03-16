@@ -19,7 +19,8 @@ This project demonstrates how to create a React application using CDNs for React
 │       └── index.js
 ├── app.js
 ├── index.html
-└── index.js```
+└── index.js
+```
 
 
 ### Functioning
@@ -39,7 +40,7 @@ In this project, we are not using JSX because we want to create a React app with
 Ce projet démontre comment créer une application React en utilisant des CDN pour React, ReactDOM et Babel. Les composants sont chargés dynamiquement en utilisant jQuery pour les requêtes AJAX.
 
 ### Structure du projet
-*```├── components
+```.├── components
 │ ├── Footer
 │ │ └── index.js
 │ ├── Loader
@@ -52,7 +53,8 @@ Ce projet démontre comment créer une application React en utilisant des CDN po
 │ └── index.js
 ├── app.js
 ├── index.html
-└── index.js```
+└── index.js
+```
 
 
 ### Fonctionnement
